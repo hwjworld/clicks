@@ -1,0 +1,14 @@
+mysql:
+DROP TABLE IF EXISTS `clickstat`;
+CREATE TABLE `clickstat` (
+  `clickid` varchar(255) DEFAULT NULL,
+  `pageurl` varchar(255) DEFAULT NULL,
+  `support` int(11) DEFAULT NULL,
+  `oppo` int(11) DEFAULT NULL,
+  `grade` int(11) DEFAULT NULL,
+  `gradeCount` int(11) DEFAULT NULL,
+  KEY `idx_clickid` (`clickid`)
+);
+
+oracle:
+mssql
